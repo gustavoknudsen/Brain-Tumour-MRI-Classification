@@ -15,7 +15,14 @@
 - Confusion Matrix
 - Sample Activation Steps
 
+## Discussion
+To improve the CNN model, heavier regularisation should be implemented or the model should be simplified to address the overfitting. However, 94% accuracy is still a good result and the investigation clearly showed the benefits of CNNs for image processing and image classification tasks.
+
 ## Setup
 1. Clone repository
 2. Install requirements
 3. Run Jupyter Notebook
+
+## CNN Sample
+![image](https://github.com/user-attachments/assets/4ffe135f-0772-4d7f-ab8e-b3bbda738f12)
+
