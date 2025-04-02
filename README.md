@@ -1,13 +1,33 @@
 # Brain Tumor Classification Analysis NN vs. CNN
 
 ## Overview
-- Investigation Comparing the Results of a Traditional Neural Network vs. a Convolutional Neural Network in Image Classification Tasks.
+- Investigation Comparing the Results of a Traditional Neural Network vs. a Convolutional Neural Network in Image Classification Tasks. Following that, a second CNN was built, improving on the first one. Achieved 99.3% Validation Score.
 - Brain Tumor MRI Dataset by Masoud Nickparvar: [[Dataset](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset)]
 
 ## Key Findings
-- Validation Accuracy: 94.4% vs. 67.8%
-- Model Architecture: Custom CNN (inspired by VGG)
+- Validation Accuracy: 99.3 % vs. 94.4% vs. 67.8%
+- Model Architecture: Traditional NN, Custom CNN (inspired by VGG), Improved Custom CNN
 - Classes: Glioma, Meningioma, No Tumor, Pituitary
+
+## Techniques Used
+- Data Preprocessing and Augmentation
+- Convolutional Layers
+- Dense Layers
+- Max Pooling
+- Dropout
+- Batch Normalisation
+- ReLU and Softmax Activation Functions
+- Learning Rate Scheduling
+- Early Stopping
+- Categorical Cross-Entropy Function
+- Adam Optimiser
+
+## Libraries and Frameworks
+- TensorFlow/Keras
+- Scikit-learn
+- NumPy
+- Matplotlib & Seaborn
+- Pandas
 
 ## Visualizations
 - Training/Validation Curves
@@ -16,7 +36,7 @@
 - Sample Activation Steps
 
 ## Discussion
-To improve the CNN model, heavier regularisation should be implemented or the model should be simplified to address the overfitting. However, 94% accuracy is still a good result and the investigation clearly showed the benefits of CNNs for image processing and image classification tasks.
+The first two models clearly showed the strengths of a convolutional layer in image processing tasks. To improve the first CNN model, heavier regularisation was implemented, stronger data augmentations was used, and the model was simplified to address the overfitting. Larger pooling was used and less convolutional layers and filters were used. This improved model trained much faster (a fraction of the trainable parameters) and was less prone to overfitting, achieving a very good score on the test set.
 
 ## Setup
 1. Clone repository
@@ -24,5 +44,9 @@ To improve the CNN model, heavier regularisation should be implemented or the mo
 3. Run Jupyter Notebook
 
 ## CNN Sample
-![image](https://github.com/user-attachments/assets/4ffe135f-0772-4d7f-ab8e-b3bbda738f12)
-
+Performance
+![Accuracy and Loss per Epoch Graphs](performance.png)
+Sample Predictions by the 2nd CNN Model
+![Sample Predictions by the 2nd CNN Model](sample.png)
+Sample Activation Steps
+![Sample Activation Steps](activation.png)
