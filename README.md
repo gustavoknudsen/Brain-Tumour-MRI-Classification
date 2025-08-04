@@ -5,8 +5,8 @@
 - Brain Tumor MRI Dataset by Masoud Nickparvar: [[Dataset](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset)]
 
 ## Key Findings
-- Validation Accuracy: 99.3 % vs. 94.4% vs. 67.8%
-- Model Architecture: Traditional NN, Custom CNN (inspired by VGG), Improved Custom CNN
+- Validation Accuracy: 67.8% vs. 94.4% vs. 99.3 %
+- Model Architecture: Traditional NN, Custom CNN (inspired by VGG), Fine-tuned CNN
 - Classes: Glioma, Meningioma, No Tumor, Pituitary
 
 ## Techniques Used
